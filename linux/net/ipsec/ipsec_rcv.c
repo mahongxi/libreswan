@@ -1327,7 +1327,7 @@ static enum ipsec_rcv_value ipsec_rcv_auth_decap(struct ipsec_rcv_state *irs)
 				 irs->sa, ipsec_life_timebased,
 				 ipsec_incoming,
 				 irs->ipsp) == ipsec_life_harddied ||
-	    ipsec_lifetime_check(&irs->ipsp->ips_life.ipl_addtime, "usetime",
+	    ipsec_lifetime_check(&irs->ipsp->ips_life.ipl_usetime, "usetime",
 				 irs->sa, ipsec_life_timebased,
 				 ipsec_incoming,
 				 irs->ipsp) == ipsec_life_harddied ||
